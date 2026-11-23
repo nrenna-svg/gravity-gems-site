@@ -1,0 +1,100 @@
+<title>Gravity Gems Support</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600&display=swap">
+<style>
+/* One calm column on a deep-space ground: the game's own gold and gem colors as accents, nothing else competing. */
+:root{
+  --bg:#0b0a24; --panel:#17153d; --line:#2e2a66; --fg:#ecebff; --muted:#a9a6d6; --gold:#ffc53f; --gem:#b583ff;
+  --display:"Lilita One","Arial Rounded MT Bold",sans-serif; --body:"Fredoka","Avenir Next",system-ui,sans-serif;
+  color-scheme:dark;
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;
+  background-image:radial-gradient(1.5px 1.5px at 12% 8%,#ffffff55,transparent),radial-gradient(1px 1px at 78% 14%,#ffffff44,transparent),radial-gradient(1.5px 1.5px at 60% 4%,#ffffff40,transparent),radial-gradient(90% 40% at 50% 0%,#2a1f6e 0%,transparent 70%);
+  background-repeat:no-repeat}
+.wrap{max-width:680px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:36px}
+header{display:flex;flex-direction:column;gap:6px}
+.brand{font-family:var(--display);font-size:clamp(38px,9vw,56px);line-height:1;margin:0;text-wrap:balance}
+.brand span{background:linear-gradient(100deg,#ff2f55,#ffb020 25%,#1fd18c 45%,#2f8fff 65%,#a35cff 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{margin:0;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:var(--fg);text-decoration:none;font-weight:600;font-size:15px;padding:7px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--panel)}
+nav a:hover,nav a:focus-visible{border-color:var(--gold);outline:none}
+section{display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}
+h2{font-family:var(--display);font-weight:400;font-size:30px;color:var(--gold);margin:0;text-wrap:balance}
+h3{font-size:18px;font-weight:600;margin:8px 0 0}
+p,ul{margin:0}
+ul{padding-left:22px;display:flex;flex-direction:column;gap:6px}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 16px;border-radius:16px;background:var(--panel);border:1.5px solid var(--line)}
+.contact code{font-family:var(--body);font-weight:600;font-size:17px;color:var(--fg);user-select:all;word-break:break-all}
+.contact button{font:inherit;font-size:14px;font-weight:600;color:#2a1a00;background:var(--gold);border:0;border-radius:10px;padding:6px 12px;cursor:pointer}
+.contact button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.facts div{padding:12px 14px;border-radius:14px;border:1.5px solid var(--line)}
+.facts b{display:block;font-family:var(--display);font-weight:400;font-size:20px;color:var(--gem)}
+.facts span{font-size:14px;color:var(--muted)}
+.muted{color:var(--muted);font-size:15px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1 class="brand">Gravity <span>Gems</span></h1>
+    <p class="tag">Tilt the cosmos. Match the gems. Make it go boom.</p>
+  </header>
+
+  <nav aria-label="Sections"><a href="#support">Support</a><a href="#privacy">Privacy policy</a></nav>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, a bug, or an idea for the game? Email me and I'll get back to you.</p>
+    <div class="contact"><code id="mail">n@dotyou.me</code><button type="button" id="copy">Copy</button></div>
+    <h3>How do I play?</h3>
+    <p>Swipe to change which way gravity pulls, and tap a group of 3 or more matching gems to pop it. Popping 4 or more makes a numbered bomb; match a bomb into a group of its color to set it off. The full guide is under How to play on the main menu.</p>
+    <h3>Where is my progress saved?</h3>
+    <p>On your iPhone, inside the app. Deleting the app deletes your progress, Stardust and stats, and they can't be recovered.</p>
+    <h3>How do I start over?</h3>
+    <p>Open Settings in the game and use the reset option. This clears your missions, scores and Stardust on this device.</p>
+    <h3>How do I turn off music, sound or vibration?</h3>
+    <p>In Settings, or from the pause menu during a mission.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <p class="muted">Effective November 6, 2026</p>
+    <p>Gravity Gems is made by Nick Renna. In short: the game does not collect, store or share any information about you.</p>
+    <div class="facts">
+      <div><b>No data collected</b><span>Nothing about you leaves your device</span></div>
+      <div><b>No account</b><span>No sign-up, no login</span></div>
+      <div><b>No ads or tracking</b><span>No analytics, no ad networks</span></div>
+    </div>
+    <h3>What stays on your device</h3>
+    <p>To work, the game saves a few things in its own storage on your iPhone:</p>
+    <ul>
+      <li>Your mission progress, best scores, medals and stats</li>
+      <li>Your Stardust, boosters and the themes and music you've unlocked</li>
+      <li>Your settings, such as sound, music and vibration</li>
+    </ul>
+    <p>This information is never sent to me or to anyone else. It is deleted when you delete the app, or when you reset your progress in Settings.</p>
+    <h3>Internet and third parties</h3>
+    <p>The game plays fully offline and does not connect to any server. It contains no third-party analytics, advertising or tracking code.</p>
+    <h3>Children</h3>
+    <p>Gravity Gems is suitable for all ages. Because it collects no personal information, it collects none from children.</p>
+    <h3>Changes to this policy</h3>
+    <p>If a future version adds something that uses data, such as an online leaderboard or in-app purchases, this policy will be updated first and the date above will change. The App Store's privacy details will be updated at the same time.</p>
+    <h3>Contact</h3>
+    <p>Questions about privacy: use the email address in the Support section above.</p>
+  </section>
+
+  <footer>© 2026 Nick Renna · Gravity Gems for iPhone</footer>
+</div>
+
+<script>
+  document.getElementById("copy").addEventListener("click", async () => {
+    const el = document.getElementById("mail"), btn = document.getElementById("copy");
+    try { await navigator.clipboard.writeText(el.textContent.trim()); btn.textContent = "Copied"; }
+    catch (e) { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1800);
+  });
+</script>
